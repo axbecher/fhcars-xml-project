@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Proiect in XML pentru Tehnologii Web">
+    <meta name="keywords" content="Proiect Tehnologii Web, html, css, boostrap, axbecher, Alexandru Becher, UVT, FEAA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+    <title>Query 7 | FH Cars - Tehnologii Web XML Proiect</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header sticky-top navbar-expand-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a class="link" href="./index.html">
+                            
+                            <!-- <img src="img/logo.png" alt=""> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul id="menuNavigation">
+                                <li><a href="./index.html">Homepage</a></li>
+                                <li ><a href="#">Queries <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./queries/query1.html">Query 1</a></li>
+                                        <li><a href="/queries/query1.html">Query 2</a></li>
+                                        <li><a href="/queries/query1.html">Query 3</a></li>
+                                        <li><a href="/queries/query1.html">Query 4</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="active"><a href="./table.html">Table</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="row">
+            <div class="col-lg-6 text-center">
+               <div><div class="sectionTitle1">Cerinta:</div> <h4>Masini care au <strong>rating</strong> peste <strong>7</strong> la <strong>viteza</strong>, <strong>control</strong>, <strong>acceleratie</strong></stron>, 
+                  <strong>lansare</strong>, <strong>franare</strong>, <strong>ordonate</strong> in functie de <strong>acceleratie, descrescator</strong>.</h4></div>
+         
+            </div>
+            <div class="col-lg-6 text-center">
+               <div><div class="sectionTitle1">xQuery</div> <h4>
+                  let <b>$objects</b> := <b>(doc("FH_Cars.xml")/Object/GameObject)</b>
+                  <br>
+                  for $x in $objects <br>
+                  where <b>$x/speed >= '7'</b> and <b>$x/handling >= '7'</b> and <b>$x/acceleration >= '7'</b> and <b>$x/launch >= '7'</b> and <b>$x/braking >= '7'</b> <br>
+                  order by <b>$x/acceleration descending</b> <br>
+                  return ...</h4></div> <br>
+            </div>
+        </div>
+      <br>
+      
+         
+      
+
+      <table id="tableFHCars">
+         <tr class="sticky-top">
+            <th>Imagine</th>
+            <th>Nume si Model</th>
+            <th>Tip model</th>
+            <th>Pret in jpc</th>
+            <th>Sursa masina</th>
+            <th>Statistici stoc</th>
+            <th>Rating stoc</th>
+            <th>Tractiune</th>
+            <th>Scor Viteza</th>
+            <th>Scor Control</th>
+            <th>Scor Acceleratie</th>
+            <th>Scor Lansare</th>
+            <th>Scor Franare</th>
+            <th>Scor Offroad</th>
+            <th>Viteza maxima</th>
+            <th>De la 0 la 60 MPH</th>
+            <th>De la 0 la 100 MPH</th>
+            <th>Forta G</th>
+            <th>Sursa masina 1</th>
+            <th>Sursa masina 2</th>
+            <th>Cai putere</th>
+            <th>Greutate in lbs</th>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_519.jpg?v=1"/>
+            </td>
+            <td>2018 ItalDesign ZeroUno</td>
+            <td>HYPERCARS</td>
+            <td>2,400,000</td>
+            <td>Season Event</td>
+            <td>S1</td>
+            <td>869.0</td>
+            <td>AWD</td>
+            <td>7.6</td>
+            <td>7.7</td>
+            <td>9.2</td>
+            <td>8.9</td>
+            <td>8.0</td>
+            <td>4.9</td>
+            <td>210.9 Mph</td>
+            <td>2.8s</td>
+            <td>6.2s</td>
+            <td>1.24 g</td>
+            <td>Festival Playlist</td>
+            <td>Forza Shop</td>
+            <td>602</td>
+            <td>3,362</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_287.jpg?v=1"/>
+            </td>
+            <td>2013 Lamborghini Veneno</td>
+            <td>HYPERCARS</td>
+            <td>3,000,000</td>
+            <td>Autoshow</td>
+            <td>S2</td>
+            <td>910.0</td>
+            <td>AWD</td>
+            <td>8.2</td>
+            <td>9.4</td>
+            <td>8.8</td>
+            <td>8.1</td>
+            <td>9.7</td>
+            <td>4.6</td>
+            <td>224.1 Mph</td>
+            <td>2.7s</td>
+            <td>5.8s</td>
+            <td>1.66 g</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>740</td>
+            <td>3,629</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_289.jpg?v=1"/>
+            </td>
+            <td>2016 Lamborghini Aventador Superveloce</td>
+            <td>HYPERCARS</td>
+            <td>480,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>872.0</td>
+            <td>AWD</td>
+            <td>8.5</td>
+            <td>7.9</td>
+            <td>8.7</td>
+            <td>8.0</td>
+            <td>8.1</td>
+            <td>5.0</td>
+            <td>237.2 Mph</td>
+            <td>2.7s</td>
+            <td>5.9s</td>
+            <td>1.26 g</td>
+            <td>Wheelspin</td>
+            <td>Accolade</td>
+            <td>740</td>
+            <td>3,706</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_290.jpg?v=1"/>
+            </td>
+            <td>2016 Lamborghini Centenario LP 770-4</td>
+            <td>HYPERCARS</td>
+            <td>2,300,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>884.0</td>
+            <td>AWD</td>
+            <td>8.3</td>
+            <td>8.7</td>
+            <td>8.7</td>
+            <td>8.0</td>
+            <td>8.9</td>
+            <td>4.6</td>
+            <td>228.6 Mph</td>
+            <td>2.8s</td>
+            <td>5.4s</td>
+            <td>1.28 g</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>759</td>
+            <td>3,693</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_550.jpg?v=2"/>
+            </td>
+            <td>2018 Lamborghini Aventador SVJ</td>
+            <td>HYPERCARS</td>
+            <td>500,000</td>
+            <td>Season Event</td>
+            <td>S1</td>
+            <td>889.0</td>
+            <td>AWD</td>
+            <td>8.0</td>
+            <td>8.6</td>
+            <td>8.3</td>
+            <td>7.6</td>
+            <td>8.2</td>
+            <td>4.7</td>
+            <td>222.7 Mph</td>
+            <td>2.8s</td>
+            <td>5.8s</td>
+            <td>1.28 g</td>
+            <td>Festival Playlist</td>
+            <td>Forza Shop</td>
+            <td>759</td>
+            <td>3,607</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_286.jpg?v=1"/>
+            </td>
+            <td>2012 Lamborghini Aventador LP700-4</td>
+            <td>HYPERCARS</td>
+            <td>380,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>847.0</td>
+            <td>AWD</td>
+            <td>8.9</td>
+            <td>7.1</td>
+            <td>8.2</td>
+            <td>7.4</td>
+            <td>7.3</td>
+            <td>5.0</td>
+            <td>245.9 Mph</td>
+            <td>2.8s</td>
+            <td>6.5s</td>
+            <td>1.13 g</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>700</td>
+            <td>3,816</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_036.jpg?v=1"/>
+            </td>
+            <td>2016 Audi R8 V10 plus</td>
+            <td>MODERN SUPERCARS</td>
+            <td>242,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>834.0</td>
+            <td>AWD</td>
+            <td>7.8</td>
+            <td>7.1</td>
+            <td>7.8</td>
+            <td>7.4</td>
+            <td>7.3</td>
+            <td>5.1</td>
+            <td>215.9 Mph</td>
+            <td>2.7s</td>
+            <td>6.1s</td>
+            <td>1.11 g</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>610</td>
+            <td>3,428</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_288.jpg?v=1"/>
+            </td>
+            <td>2014 Lamborghini Huracán LP 610-4</td>
+            <td>MODERN SUPERCARS</td>
+            <td>240,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>838.0</td>
+            <td>AWD</td>
+            <td>7.8</td>
+            <td>7.1</td>
+            <td>7.8</td>
+            <td>7.4</td>
+            <td>7.1</td>
+            <td>5.0</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>602</td>
+            <td>3,422</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_552.jpg?v=1"/>
+            </td>
+            <td>2012 Lamborghini Aventador J</td>
+            <td>HYPERCARS</td>
+            <td>2,700,000</td>
+            <td>Season Event</td>
+            <td>S1</td>
+            <td>839.0</td>
+            <td>AWD</td>
+            <td>7.9</td>
+            <td>7.1</td>
+            <td>7.7</td>
+            <td>7.0</td>
+            <td>7.1</td>
+            <td>5.1</td>
+            <td>216.1 Mph</td>
+            <td>2.8s</td>
+            <td>6.1s</td>
+            <td>1.14 g</td>
+            <td>Festival Playlist</td>
+            <td>Forza Shop</td>
+            <td>700</td>
+            <td>3,816</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_474.jpg?v=1"/>
+            </td>
+            <td>2015 Ultima Evolution Coupe 1020</td>
+            <td>EXTREME TRACK TOYS</td>
+            <td>300,000</td>
+            <td>Autoshow</td>
+            <td>S2</td>
+            <td>961.0</td>
+            <td>RWD</td>
+            <td>8.8</td>
+            <td>9.5</td>
+            <td>7.7</td>
+            <td>8.4</td>
+            <td>7.9</td>
+            <td>3.9</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>1,020</td>
+            <td>2,094</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_429.jpg?v=1"/>
+            </td>
+            <td>2018 Porsche 911 GT2 RS</td>
+            <td>TRACK TOYS</td>
+            <td>315,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>888.0</td>
+            <td>RWD</td>
+            <td>8.0</td>
+            <td>8.6</td>
+            <td>7.5</td>
+            <td>8.3</td>
+            <td>8.3</td>
+            <td>4.2</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>691</td>
+            <td>3,197</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_371.jpg?v=1"/>
+            </td>
+            <td>2010 Mosler MT900S</td>
+            <td>EXTREME TRACK TOYS</td>
+            <td>320,000</td>
+            <td>Autoshow</td>
+            <td>S2</td>
+            <td>919.0</td>
+            <td>RWD</td>
+            <td>8.2</td>
+            <td>9.8</td>
+            <td>7.4</td>
+            <td>8.1</td>
+            <td>8.4</td>
+            <td>4.7</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>530</td>
+            <td>2,480</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_425.jpg?v=1"/>
+            </td>
+            <td>2016 Porsche 911 GT3 RS</td>
+            <td>TRACK TOYS</td>
+            <td>235,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>864.0</td>
+            <td>RWD</td>
+            <td>7.8</td>
+            <td>8.3</td>
+            <td>7.4</td>
+            <td>7.8</td>
+            <td>8.0</td>
+            <td>4.5</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>493</td>
+            <td>3,131</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_433.jpg?v=1"/>
+            </td>
+            <td>2019 Porsche 911 GT3 RS</td>
+            <td>TRACK TOYS</td>
+            <td>255,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>860.0</td>
+            <td>RWD</td>
+            <td>7.2</td>
+            <td>8.4</td>
+            <td>7.4</td>
+            <td>7.6</td>
+            <td>8.2</td>
+            <td>4.4</td>
+            <td>198.8 Mph</td>
+            <td>3.0s</td>
+            <td>6.9s</td>
+            <td>1.28 g</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>514</td>
+            <td>3,153</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_135.jpg?v=1"/>
+            </td>
+            <td>2013 Ferrari LaFerrari</td>
+            <td>HYPERCARS</td>
+            <td>1,500,000</td>
+            <td>Car Collection</td>
+            <td>S2</td>
+            <td>934.0</td>
+            <td>RWD</td>
+            <td>9.4</td>
+            <td>9.0</td>
+            <td>7.2</td>
+            <td>7.9</td>
+            <td>9.6</td>
+            <td>4.4</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>963</td>
+            <td>3,263</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_143.jpg?v=1"/>
+            </td>
+            <td>2019 Ferrari 488 Pista</td>
+            <td>TRACK TOYS</td>
+            <td>320,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>889.0</td>
+            <td>RWD</td>
+            <td>7.6</td>
+            <td>8.2</td>
+            <td>7.0</td>
+            <td>7.6</td>
+            <td>8.4</td>
+            <td>4.2</td>
+            <td>210.5 Mph</td>
+            <td>2.3s</td>
+            <td>4.9s</td>
+            <td>1.27 g</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>711</td>
+            <td>3,053</td>
+         </tr>
+      </table>
+      
+    </section>
+<!-- Product Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer" id="myFooter">
+    <h1>Check javascript..</h1>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Search model Begin -->
+  
+<!-- Search model end -->
+
+<!-- Js Plugins -->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/player.js"></script>
+<script src="../js/jquery.nice-select.min.js"></script>
+<script src="../js/mixitup.min.js"></script>
+<script src="../js/jquery.slicknav.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/table.js"></script>
+
+
+</body>
+
+</html>
+
+

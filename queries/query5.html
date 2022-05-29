@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Proiect in XML pentru Tehnologii Web">
+    <meta name="keywords" content="Proiect Tehnologii Web, html, css, boostrap, axbecher, Alexandru Becher, UVT, FEAA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+    <title>Query 5 | FH Cars - Tehnologii Web XML Proiect</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header sticky-top navbar-expand-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a class="link" href="./index.html">
+                            
+                            <!-- <img src="img/logo.png" alt=""> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul id="menuNavigation">
+                                <li><a href="./index.html">Homepage</a></li>
+                                <li ><a href="#">Queries <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./queries/query1.html">Query 1</a></li>
+                                        <li><a href="/queries/query1.html">Query 2</a></li>
+                                        <li><a href="/queries/query1.html">Query 3</a></li>
+                                        <li><a href="/queries/query1.html">Query 4</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="active"><a href="./table.html">Table</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="row">
+            <div class="col-lg-6 text-center">
+               <div><div class="sectionTitle1">Cerinta:</div> <h4>Masinile pe care le poti gasi doar in <strong>Barn</strong> in <strong>ordinea rating-ului</strong> lor</h4></div>
+         
+            </div>
+            <div class="col-lg-6 text-center">
+               <div><div class="sectionTitle1">xQuery</div> <h4>
+                  let <b>$objects</b> := <b>(doc("FH_Cars.xml")/Object/GameObject)</b>
+                  <br>
+                  for $x in $objects <br>
+                  where <b>$x/car_source = 'Barn'</b> <br>
+                  order by <b>$x/Stock_Rating descending</b> <br>
+                  return ...</h4></div> <br>
+            </div>
+        </div>
+      <br>
+      
+         
+      
+
+      <table id="tableFHCars">
+         <tr class="sticky-top">
+            <th>Imagine</th>
+            <th>Nume si Model</th>
+            <th>Tip model</th>
+            <th>Pret in jpc</th>
+            <th>Sursa masina</th>
+            <th>Statistici stoc</th>
+            <th>Rating stoc</th>
+            <th>Tractiune</th>
+            <th>Scor Viteza</th>
+            <th>Scor Control</th>
+            <th>Scor Acceleratie</th>
+            <th>Scor Lansare</th>
+            <th>Scor Franare</th>
+            <th>Scor Offroad</th>
+            <th>Viteza maxima</th>
+            <th>De la 0 la 60 MPH</th>
+            <th>De la 0 la 100 MPH</th>
+            <th>Forta G</th>
+            <th>Sursa masina 1</th>
+            <th>Sursa masina 2</th>
+            <th>Cai putere</th>
+            <th>Greutate in lbs</th>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_523.jpg?v=1"/>
+            </td>
+            <td>1989 Ferrari F40 Competizionne</td>
+            <td>EXTREME TRACK TOYS</td>
+            <td>2,000,000</td>
+            <td>Barn</td>
+            <td>S2</td>
+            <td>947.0</td>
+            <td>RWD</td>
+            <td>8.3</td>
+            <td>10.0</td>
+            <td>6.6</td>
+            <td>1.7</td>
+            <td>8.5</td>
+            <td>4.4</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>691</td>
+            <td>2,315</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_254.jpg?v=1"/>
+            </td>
+            <td>1991 Jaguar Sport XJR-15</td>
+            <td>RETRO SUPERCARS</td>
+            <td>500,000</td>
+            <td>Barn</td>
+            <td>S1</td>
+            <td>828.0</td>
+            <td>RWD</td>
+            <td>7.5</td>
+            <td>8.0</td>
+            <td>6.0</td>
+            <td>6.3</td>
+            <td>6.8</td>
+            <td>4.7</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>450</td>
+            <td>2,315</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_525.jpg?v=1"/>
+            </td>
+            <td>1999 Dodge Viper GTS ACR</td>
+            <td>RETRO MUSCLE</td>
+            <td>75,000</td>
+            <td>Barn</td>
+            <td>A</td>
+            <td>717.0</td>
+            <td>RWD</td>
+            <td>6.9</td>
+            <td>5.5</td>
+            <td>5.2</td>
+            <td>4.1</td>
+            <td>4.0</td>
+            <td>4.5</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>460</td>
+            <td>3,450</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_527.jpg?v=1"/>
+            </td>
+            <td>1993 Toyota #1 T100 Baja Truck</td>
+            <td>UNLIMITED OFFROAD</td>
+            <td>500,000</td>
+            <td>Barn</td>
+            <td>B</td>
+            <td>693.0</td>
+            <td>RWD</td>
+            <td>4.7</td>
+            <td>3.7</td>
+            <td>5.9</td>
+            <td>6.0</td>
+            <td>4.7</td>
+            <td>10.0</td>
+            <td>130.6 Mph</td>
+            <td>5.2s</td>
+            <td>14.9s</td>
+            <td>0.93 g</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>360</td>
+            <td>4,000</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_522.jpg?v=1"/>
+            </td>
+            <td>1968 Dodge Dart Hemi Super Stock</td>
+            <td>CLASSIC MUSCLE</td>
+            <td>300,000</td>
+            <td>Barn</td>
+            <td>B</td>
+            <td>650.0</td>
+            <td>RWD</td>
+            <td>4.5</td>
+            <td>3.6</td>
+            <td>4.1</td>
+            <td>4.2</td>
+            <td>2.9</td>
+            <td>4.9</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>425</td>
+            <td>3,020</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_153.jpg?v=1"/>
+            </td>
+            <td>1967 Ford Racing Escort MK1</td>
+            <td>CLASSIC RALLY</td>
+            <td>500,000</td>
+            <td>Barn</td>
+            <td>B</td>
+            <td>636.0</td>
+            <td>RWD</td>
+            <td>4.5</td>
+            <td>4.8</td>
+            <td>4.6</td>
+            <td>3.5</td>
+            <td>4.1</td>
+            <td>7.3</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>200</td>
+            <td>2,116</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_517.jpg?v=1"/>
+            </td>
+            <td>1962 Ferrari 250 GTO</td>
+            <td>CLASSIC RACERS</td>
+            <td>50,000,000</td>
+            <td>Barn</td>
+            <td>B</td>
+            <td>612.0</td>
+            <td>RWD</td>
+            <td>6.4</td>
+            <td>3.9</td>
+            <td>3.5</td>
+            <td>2.5</td>
+            <td>2.8</td>
+            <td>5.2</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>300</td>
+            <td>2,299</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_530.jpg?v=1"/>
+            </td>
+            <td>1973 Porsche 911 Carrera RS</td>
+            <td>RARE CLASSICS</td>
+            <td>350,000</td>
+            <td>Barn</td>
+            <td>B</td>
+            <td>601.0</td>
+            <td>RWD</td>
+            <td>5.2</td>
+            <td>4.9</td>
+            <td>5.1</td>
+            <td>3.7</td>
+            <td>3.1</td>
+            <td>5.0</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>207</td>
+            <td>2,450</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_516.jpg?v=1"/>
+            </td>
+            <td>1973 BMW 2002 TURBO</td>
+            <td>CLASSIC SPORTS CARS</td>
+            <td>26,000</td>
+            <td>Barn</td>
+            <td>C</td>
+            <td>531.0</td>
+            <td>RWD</td>
+            <td>4.9</td>
+            <td>4.3</td>
+            <td>3.8</td>
+            <td>1.5</td>
+            <td>2.8</td>
+            <td>5.6</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>168</td>
+            <td>2,381</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_154.jpg?v=1"/>
+            </td>
+            <td>1968 Ford Mustang GT 2+2 Fastback</td>
+            <td>CLASSIC MUSCLE</td>
+            <td>50,000</td>
+            <td>Barn</td>
+            <td>D</td>
+            <td>498.0</td>
+            <td>RWD</td>
+            <td>5.7</td>
+            <td>3.9</td>
+            <td>3.4</td>
+            <td>3.3</td>
+            <td>2.3</td>
+            <td>5.5</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>325</td>
+            <td>3,548</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_497.jpg?v=1"/>
+            </td>
+            <td>1953 Chevrolet Corvette</td>
+            <td>CLASSIC SPORTS CARS</td>
+            <td>210,000</td>
+            <td>Barn</td>
+            <td>D</td>
+            <td>366.0</td>
+            <td>RWD</td>
+            <td>3.6</td>
+            <td>4.0</td>
+            <td>2.3</td>
+            <td>1.1</td>
+            <td>2.0</td>
+            <td>5.6</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>160</td>
+            <td>2,900</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_146.jpg?v=1"/>
+            </td>
+            <td>1956 Ford F-100</td>
+            <td>RODS AND CUSTOMS</td>
+            <td>36,000</td>
+            <td>Barn</td>
+            <td>D</td>
+            <td>302.0</td>
+            <td>RWD</td>
+            <td>3.8</td>
+            <td>2.7</td>
+            <td>3.1</td>
+            <td>3.0</td>
+            <td>2.1</td>
+            <td>6.9</td>
+            <td>106.0 Mph</td>
+            <td>14.9s</td>
+            <td>40.0s</td>
+            <td>0.71 g</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>173</td>
+            <td>3,325</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_531.jpg?v=1"/>
+            </td>
+            <td>1968 Renault 4L Export</td>
+            <td>CULT CARS</td>
+            <td>20,000</td>
+            <td>Barn</td>
+            <td>D</td>
+            <td>100.0</td>
+            <td>FWD</td>
+            <td>2.2</td>
+            <td>3.5</td>
+            <td>1.5</td>
+            <td>2.3</td>
+            <td>2.0</td>
+            <td>5.8</td>
+            <td>64.6 Mph</td>
+            <td>30.1s</td>
+            <td>??s</td>
+            <td>0.68 g</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>27</td>
+            <td>1,310</td>
+         </tr>
+      </table>
+      
+    </section>
+<!-- Product Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer" id="myFooter">
+    <h1>Check javascript..</h1>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Search model Begin -->
+  
+<!-- Search model end -->
+
+<!-- Js Plugins -->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/player.js"></script>
+<script src="../js/jquery.nice-select.min.js"></script>
+<script src="../js/mixitup.min.js"></script>
+<script src="../js/jquery.slicknav.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/table.js"></script>
+
+
+</body>
+
+</html>
+
+

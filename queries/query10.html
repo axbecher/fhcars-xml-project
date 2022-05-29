@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Proiect in XML pentru Tehnologii Web">
+    <meta name="keywords" content="Proiect Tehnologii Web, html, css, boostrap, axbecher, Alexandru Becher, UVT, FEAA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+    <title>Query 10 | FH Cars - Tehnologii Web XML Proiect</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header sticky-top navbar-expand-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a class="link" href="./index.html">
+                            
+                            <!-- <img src="img/logo.png" alt=""> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul id="menuNavigation">
+                                <li><a href="./index.html">Homepage</a></li>
+                                <li ><a href="#">Queries <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./queries/query1.html">Query 1</a></li>
+                                        <li><a href="/queries/query1.html">Query 2</a></li>
+                                        <li><a href="/queries/query1.html">Query 3</a></li>
+                                        <li><a href="/queries/query1.html">Query 4</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="active"><a href="./table.html">Table</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="row">
+            <div class="col-lg-6 text-center">
+               <div><div class="sectionTitle1">Cerinta:</div> <h4>Masinile care au scor la <strong>control</strong> 
+                  peste <strong>6</strong>, scor <strong>offroad</strong> peste <strong>6</strong> si sunt <strong>ordonate</strong> in functie de <strong>pret descarcator</strong></h4></div>
+         
+            </div>
+            <div class="col-lg-6 text-center">
+               <div><div class="sectionTitle1">xQuery</div> <h4>
+                  let <b>$objects</b> := <b>(doc("FH_Cars.xml")/Object/GameObject)</b>
+                  <br>
+                  for $x in $objects <br>
+                  where <b>$x/handling >= '6'</b> and <b>$x/Offroad >= '6'</b> <br>
+                  order by <b>$x/In_Game_Price descending</b> <br>
+                  return ...</h4></div> <br>
+            </div>
+        </div>
+      <br>
+      
+         
+      
+
+      <table id="tableFHCars">
+         <tr class="sticky-top">
+            <th>Imagine</th>
+            <th>Nume si Model</th>
+            <th>Tip model</th>
+            <th>Pret in jpc</th>
+            <th>Sursa masina</th>
+            <th>Statistici stoc</th>
+            <th>Rating stoc</th>
+            <th>Tractiune</th>
+            <th>Scor Viteza</th>
+            <th>Scor Control</th>
+            <th>Scor Acceleratie</th>
+            <th>Scor Lansare</th>
+            <th>Scor Franare</th>
+            <th>Scor Offroad</th>
+            <th>Viteza maxima</th>
+            <th>De la 0 la 60 MPH</th>
+            <th>De la 0 la 100 MPH</th>
+            <th>Forta G</th>
+            <th>Sursa masina 1</th>
+            <th>Sursa masina 2</th>
+            <th>Cai putere</th>
+            <th>Greutate in lbs</th>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_513.jpg?v=1"/>
+            </td>
+            <td>1999 Ford Racing Puma Forza Edition</td>
+            <td>RALLY MONSTERS</td>
+            <td>500,000</td>
+            <td>Other</td>
+            <td>S1</td>
+            <td>900.0</td>
+            <td>AWD</td>
+            <td>5.7</td>
+            <td>6.3</td>
+            <td>9.4</td>
+            <td>6.0</td>
+            <td>5.8</td>
+            <td>8.0</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>506</td>
+            <td>2,194</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_185.jpg?v=1"/>
+            </td>
+            <td>2017 Ford M-Sport Fiesta RS</td>
+            <td>RALLY MONSTERS</td>
+            <td>500,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>808.0</td>
+            <td>AWD</td>
+            <td>5.1</td>
+            <td>6.1</td>
+            <td>8.7</td>
+            <td>9.7</td>
+            <td>6.1</td>
+            <td>8.5</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>Wheelspin</td>
+            <td>Accolade</td>
+            <td>375</td>
+            <td>2,800</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_236.jpg?v=1"/>
+            </td>
+            <td>1986 Hoonigan Ford RS200 Evolution</td>
+            <td>RALLY MONSTERS</td>
+            <td>500,000</td>
+            <td>Autoshow</td>
+            <td>S2</td>
+            <td>904.0</td>
+            <td>AWD</td>
+            <td>7.6</td>
+            <td>6.5</td>
+            <td>9.5</td>
+            <td>5.1</td>
+            <td>5.3</td>
+            <td>8.3</td>
+            <td>0.0 Mph</td>
+            <td>2.6s</td>
+            <td>4.9s</td>
+            <td>1.22 g</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>750</td>
+            <td>2,494</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_238.jpg?v=1"/>
+            </td>
+            <td>1991 Hoonigan GYMKHANA 10 Ford Escort Cosworth Group A</td>
+            <td>RALLY MONSTERS</td>
+            <td>500,000</td>
+            <td>Autoshow</td>
+            <td>S1</td>
+            <td>862.0</td>
+            <td>AWD</td>
+            <td>7.8</td>
+            <td>6.2</td>
+            <td>9.1</td>
+            <td>8.7</td>
+            <td>5.3</td>
+            <td>7.6</td>
+            <td>213.8 Mph</td>
+            <td>2.5s</td>
+            <td>5.2s</td>
+            <td>1.14 g</td>
+            <td>Wheelspin</td>
+            <td>info_not_found</td>
+            <td>620</td>
+            <td>2,690</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_240.jpg?v=1"/>
+            </td>
+            <td>1994 Hoonigan Ford Escort RS Cosworth WRC “Cossie V2”</td>
+            <td>RALLY MONSTERS</td>
+            <td>500,000</td>
+            <td>Autoshow</td>
+            <td>A</td>
+            <td>783.0</td>
+            <td>AWD</td>
+            <td>5.5</td>
+            <td>6.1</td>
+            <td>7.7</td>
+            <td>4.0</td>
+            <td>5.9</td>
+            <td>7.4</td>
+            <td>153.2 Mph</td>
+            <td>3.1s</td>
+            <td>7.7s</td>
+            <td>1.10 g</td>
+            <td>Other</td>
+            <td>info_not_found</td>
+            <td>371</td>
+            <td>2,822</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_509.jpg?v=1"/>
+            </td>
+            <td>2019 Porsche 911 GT3 RS Forza Edition</td>
+            <td>RALLY MONSTERS</td>
+            <td>255,000</td>
+            <td>Car Collection</td>
+            <td>S1</td>
+            <td>900.0</td>
+            <td>AWD</td>
+            <td>7.0</td>
+            <td>7.0</td>
+            <td>10.0</td>
+            <td>10.0</td>
+            <td>7.8</td>
+            <td>8.1</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>600</td>
+            <td>2,844</td>
+         </tr>
+         <tr>
+            <td>
+               <img src="https://www.kudosprime.com/fh5/images/cars/side/fh5_car_402.jpg?v=1"/>
+            </td>
+            <td>2007 Peugeot 207 Super 2000</td>
+            <td>RALLY MONSTERS</td>
+            <td>150,000</td>
+            <td>Autoshow</td>
+            <td>A</td>
+            <td>755.0</td>
+            <td>AWD</td>
+            <td>5.3</td>
+            <td>6.2</td>
+            <td>5.9</td>
+            <td>5.2</td>
+            <td>5.7</td>
+            <td>8.0</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>info_not_found</td>
+            <td>Wheelspin</td>
+            <td>Accolade</td>
+            <td>280</td>
+            <td>2,425</td>
+         </tr>
+      </table>
+      
+    </section>
+<!-- Product Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer" id="myFooter">
+    <h1>Check javascript..</h1>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Search model Begin -->
+  
+<!-- Search model end -->
+
+<!-- Js Plugins -->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/player.js"></script>
+<script src="../js/jquery.nice-select.min.js"></script>
+<script src="../js/mixitup.min.js"></script>
+<script src="../js/jquery.slicknav.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/table.js"></script>
+
+
+</body>
+
+</html>
+
+

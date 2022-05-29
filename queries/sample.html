@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Proiect in XML pentru Tehnologii Web">
+    <meta name="keywords" content="Proiect Tehnologii Web, html, css, boostrap, axbecher, Alexandru Becher, UVT, FEAA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+    <title>Query X | FH Cars - Tehnologii Web XML Proiect</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header sticky-top navbar-expand-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a class="link" href="./index.html">
+                            
+                            <!-- <img src="img/logo.png" alt=""> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul id="menuNavigation">
+                                <li><a href="./index.html">Homepage</a></li>
+                                <li ><a href="#">Queries <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./queries/query1.html">Query 1</a></li>
+                                        <li><a href="/queries/query1.html">Query 2</a></li>
+                                        <li><a href="/queries/query1.html">Query 3</a></li>
+                                        <li><a href="/queries/query1.html">Query 4</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="active"><a href="./table.html">Table</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="row">
+            <div class="col-lg-6 text-center">
+               <div><div class="sectionTitle1">Cerinta:</div> <h4>Doar BMW-urile in ordinea preturilor lor</h4></div>
+         
+            </div>
+            <div class="col-lg-6 text-center">
+               <div><div class="sectionTitle1">xQuery</div> <h4>
+                  let <b>$objects</b> := <b>(doc("FH_Cars.xml")/Object/GameObject)</b>
+                  <br>
+                  for $x in $objects <br>
+                  where $x/Name_and_model[contains(.,'BMW')] <br>
+                  order by $x/In_Game_Price descending <br>
+                  return ...</h4></div> <br>
+            </div>
+        </div>
+      <br>
+      
+         
+      
+
+      
+      
+    </section>
+<!-- Product Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer" id="myFooter">
+    <h1>Check javascript..</h1>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Search model Begin -->
+  
+<!-- Search model end -->
+
+<!-- Js Plugins -->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/player.js"></script>
+<script src="../js/jquery.nice-select.min.js"></script>
+<script src="../js/mixitup.min.js"></script>
+<script src="../js/jquery.slicknav.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/table.js"></script>
+
+
+</body>
+
+</html>
