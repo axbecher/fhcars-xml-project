@@ -9,7 +9,7 @@ function loadXMLDoc() {
     };
 
     
-    xmlhttp.open("GET", "../FH_Cars.xml", true);
+    xmlhttp.open("GET", "./FH_Cars.xml", true);
     xmlhttp.send();
 }
 
