@@ -133,7 +133,7 @@
 
     if(document.getElementById("menuNavigation")){
         document.getElementById("menuNavigation").innerHTML = `
-        <li><a href="https://axbecher.com/">Axbecher.com</a></li>
+        <li><a href="https://axbecher.com/portfolio/">Axbecher.com</a></li>
         <li><a href="https://axbecher.com/fhcars-xml-project/index.html">Home</a></li>
                                     <li ><a href="#">Queries <span class="arrow_carrot-down"></span></a>
                                         <ul class="dropdown">
@@ -172,7 +172,7 @@
                     <div class="footer__nav">
                         <ul>
                             <h5> v1.0.2 </h5>
-                            <li><a href="https://axbecher.com/">Axbecher.com</a></li>
+                            <li><a href="https://axbecher.com/portfolio/">Axbecher.com</a></li>
                             <li><a href="https://axbecher.com/fhcars-xml-project/index.html">Home</a></li>
                                     
                                     <li class="active"><a href="https://axbecher.com/fhcars-xml-project/table.html">Table</a></li>
