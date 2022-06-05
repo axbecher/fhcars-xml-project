@@ -171,7 +171,7 @@
                 <div class="col-lg-6">
                     <div class="footer__nav">
                         <ul>
-                            <h5> v1.0.3 </h5>
+                            <h5> v1.0.4 </h5>
                             <li><a href="https://axbecher.com/portfolio/">Axbecher.com</a></li>
                             <li><a href="https://axbecher.com/fhcars-xml-project/index.html">Home</a></li>
                                     
@@ -192,6 +192,7 @@
         }
 
         /* Version Control:
+        v1.0.4 - Add audio control in index.html
         v1.0.3 - Add queries in menu for non-javascript users
         v1.0.2 - Put absolute path in href for all hyperlinks 
         v1.0.1 - change href for all hiperlinks
